@@ -39,8 +39,8 @@ const DrinkDetails = ({drink}) => {
 
     return (
         <div className="drink-info-div">
-            <h2>{drink.strDrink}</h2>
-            <div>Ingredients</div>
+            <div className="drink-title">{drink.strDrink}</div>
+            <div className="ingredient-title">Ingredients</div>
             <ul className="ingredients-list" >
                 { 
                     ingrMeas.map((cell, idx) => (
@@ -48,8 +48,8 @@ const DrinkDetails = ({drink}) => {
                     ))
                 }
             </ul>
-            <div>Instructions</div>
-            <div>{drink.strInstructions}</div>
+            <div className="ingredient-title">Instructions</div>
+            <div className="drink-instructions">{drink.strInstructions}</div>
         </div>
     )
 }

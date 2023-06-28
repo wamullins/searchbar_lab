@@ -1,7 +1,7 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
 }
+
 
 header {
   position: fixed;
@@ -11,7 +11,7 @@ header {
   width: 100vw;
   display: flex;
   border-bottom: .5vmin solid white;
-  background-color: rgb(110, 32, 110);
+  background-color: rgb(122, 78, 32);
 }
 
 .nav-links {
@@ -27,8 +27,12 @@ header {
 .home-div {
   margin-top: 7vmin;
   width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  background-image: url("https://r4.wallpaperflare.com/wallpaper/262/346/383/scotch-bottles-shelves-alcohol-wallpaper-bcb8701c4dfc7c66a8c5bdc020eefea2.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .home-div > form {
@@ -44,17 +48,25 @@ header {
 .home-div > form > input {
   width: 40vmin;
   font-size: 5vmin;
+  border: .5vmin solid rgb(122, 78, 32);
+  border-radius: 2vmin;
+  background-color: rgba(122, 78, 32, 0.7);
 }
 
 .home-div > form > button {
   margin: 1vmin;
   width: 15vmin;
   font-size: 3vmin;
+  background-color: rgb(122, 78, 32);
+  border: none;
 }
 
 .drinks-page {
-  margin-top: 7vmin;
+  padding-top: 11vmin;
   width: 100vw;
+  background-image: url("https://r4.wallpaperflare.com/wallpaper/262/346/383/scotch-bottles-shelves-alcohol-wallpaper-bcb8701c4dfc7c66a8c5bdc020eefea2.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .drinks-list {
@@ -69,19 +81,46 @@ header {
   width: 50vmin;
   margin-bottom: 4vmin;
   border: .5vmin solid white;
+  border-radius: 3vmin;
 }
 
 .drink-grid-div > div{
   font-size: 3vmin;
   font-weight: bold;
-  background-color: rgb(110, 32, 110);
+  background-color: rgb(122, 78, 32);;
   color: white;
   padding: 1vmin;
+  border-top-left-radius: 3vmin;
+  border-top-right-radius: 3vmin;
 }
 
 .drink-info-div {
   position: fixed;
-  left: 125vmin;
-  top: 10vmin;
-  width: 80vmin;
+  right:5%;
+  top: 12vmin;
+  width: 60vmin;
+  padding: 4vmin;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: .5vmin solid rgb(122, 78, 32);;
+  border-radius: 3vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.drink-title {
+  font-weight: bold;
+  font-size: 5vmin;
+}
+
+.ingredient-title {
+  color: white;
+  /* background-color: rgb(110, 32, 110); */
+  padding: .5vmin;
+  border-bottom: .2vmin solid rgb(122, 78, 32);;
+  text-align: center;
+}
+
+.drink-instructions {
+  margin: 1vmin;
 }
