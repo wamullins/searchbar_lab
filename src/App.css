@@ -1,42 +1,87 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header {
+  position: fixed;
+  top:0;
+  left:0;
+  height: 8vmin;
+  width: 100vw;
+  display: flex;
+  border-bottom: .5vmin solid white;
+  background-color: rgb(110, 32, 110);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links {
+  margin: 1vmin;
+}
+.nav-links > * {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 4vmin;
+  color: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.home-div {
+  margin-top: 7vmin;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
-.card {
-  padding: 2em;
+.home-div > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.home-div > form > h1 {
+  font-size: 10vmin;
+}
+
+.home-div > form > input {
+  width: 40vmin;
+  font-size: 5vmin;
+}
+
+.home-div > form > button {
+  margin: 1vmin;
+  width: 15vmin;
+  font-size: 3vmin;
+}
+
+.drinks-page {
+  margin-top: 7vmin;
+  width: 100vw;
+}
+
+.drinks-list {
+  display: grid;
+  grid-template-columns: 60vmin 60vmin;
+  width: 120vmin;
+  justify-items: center;
+}
+
+.drink-grid-div {
+  height: 50vmin;
+  width: 50vmin;
+  margin-bottom: 4vmin;
+  border: .5vmin solid white;
+}
+
+.drink-grid-div > div{
+  font-size: 3vmin;
+  font-weight: bold;
+  background-color: rgb(110, 32, 110);
+  color: white;
+  padding: 1vmin;
+}
+
+.drink-info-div {
+  position: fixed;
+  left: 125vmin;
+  top: 10vmin;
+  width: 80vmin;
 }
