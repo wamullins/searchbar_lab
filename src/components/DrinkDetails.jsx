@@ -44,7 +44,7 @@ const DrinkDetails = ({drink}) => {
             <ul className="ingredients-list" >
                 { 
                     ingrMeas.map((cell, idx) => (
-                        <li className="ingredient" key={idx}>{cell[1]} {cell[0]}</li>
+                        <li className="ingredient" key={idx}>{cell[1]}  {cell[0]}</li>
                     ))
                 }
             </ul>
